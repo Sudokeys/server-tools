@@ -40,7 +40,7 @@
     For more details/customization/feedback contact us on
     contact@serpentcs.com.
     """,
-    'depends': ['base'],
+    'depends': ['base','email_template'],
     'data': [
         "security/ir.model.access.csv",
         'views/mass_editing_view.xml',
