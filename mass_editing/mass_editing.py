@@ -63,7 +63,8 @@ class mass_object(orm.Model):
         'ref_ir_value': fields.many2one(
             'ir.values', 'Sidebar Button', readonly=True,
             help="Sidebar button to open the sidebar action"),
-        'model_ids': fields.many2many('ir.model', string='Model List')
+        'model_ids': fields.many2many('ir.model', string='Model List'),
+        'email_template_id': fields.many2one('email.template', 'Email Template', ondelete='set null'),
     }
 
     _sql_constraints = [
@@ -99,7 +100,7 @@ class mass_object(orm.Model):
                 'res_model': 'mass.editing.wizard',
                 'src_model': src_obj,
                 'view_type': 'form',
-                'context': "{'mass_editing_object' : %d}" % (data.id),
+                'context': "{'mass_editing_object' : %d, 'template_id': %d}" % (data.id, data.email_template_id.id),
                 'view_mode': 'form,tree',
                 'target': 'new',
                 'auto_refresh': 1,

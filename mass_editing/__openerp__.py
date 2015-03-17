@@ -36,7 +36,7 @@ This module provides the functionality to add, update or remove the values"""
     For more details/customization/feedback contact us on"""
     """ contact@serpentcs.com.
     """,
-    'depends': ['base'],
+    'depends': ['base','email_template'],
     'data': [
         "security/ir.model.access.csv",
         'mass_editing_view.xml',
