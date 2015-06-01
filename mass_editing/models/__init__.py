@@ -3,7 +3,7 @@
 #
 #    This module uses OpenERP, Open Source Management Solution Framework.
 #    Copyright (C):
-#        2012-Today Serpent Consulting Services (<http://www.serpentcs.
+#        2012-Today Serpent Consulting Services (<http://www.serpentcs.com>)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,4 +20,5 @@
 #
 ##############################################################################
 
-from . import mass_editing_wizard
+from . import ir_model_fields
+from . import mass_object
