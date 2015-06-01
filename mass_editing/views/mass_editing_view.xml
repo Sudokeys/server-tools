@@ -21,6 +21,7 @@
                                 <button name="create_action" string="Add sidebar button" type="object" icon="gtk-execute"
                                         colspan="2" attrs="{'invisible':[('ref_ir_act_window','!=',False)]}"
                                         help="Display a button in the sidebar of related documents to open a composition wizard"/>
+                                <field name="email_template_id"/>
                                 <field name="ref_ir_act_window" attrs="{'invisible':[('ref_ir_act_window','=',False)]}"/>
                                 <field name="ref_ir_value" attrs="{'invisible':[('ref_ir_act_window','=',False)]}"/>
                                 <button name="unlink_action" string="Remove sidebar button" type="object" icon="gtk-delete"
